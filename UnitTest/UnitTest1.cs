@@ -5,17 +5,17 @@
         [Fact] // decorated with attribute
         public void Test1()
         {
-            //Arrenge
+            //Arrenge --> Declare and initialize the variables
             Calculation calculation = new Calculation();
 
             int a = 5;
             int b = 10;
             int expected = 15;
 
-            //Act
+            //Act --> Call the method to be tested
             int actual = calculation.Add(a, b);
 
-            //Assert
+            //Assert --> Verify/Compare the result
             Assert.Equal(expected, actual);
         }
     }
